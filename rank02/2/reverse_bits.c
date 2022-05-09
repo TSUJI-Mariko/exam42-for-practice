@@ -1,14 +1,25 @@
 unsigned char	reverse_bits(unsigned char octet)
 {
-	unsigned char out = 0;
+	int i;
+	int res;
 
-	out = out | ((octet & 128) >> 7);
-	out = out | ((octet & 64) >> 5);
-	out = out | ((octet & 32) >> 3);
-	out = out | ((octet & 16) >> 1);
-	out = out | ((octet & 8) << 1);
-	out = out | ((octet & 4) << 3);
-	out = out | ((octet & 2) << 5);
-	out = out | ((octet & 1) << 7);
-	return (out);
+	res = 0;
+	i = 8;
+	while (i > 0)
+	{
+		res = res * 2 + (octet % 2);
+		octet /= 2;
+		i--;
+	}
+	return (res);
 }
+
+#include <stdio.h>
+int main()
+{
+	unsigned char c;
+	c = 3;
+	printf("%d\n", reverse_bits(c));
+	return (0);
+}
+
