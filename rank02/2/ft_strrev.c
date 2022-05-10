@@ -15,6 +15,7 @@ char    *ft_strrev(char *str)
 	int len;
 	char temp;
 
+	temp = 0;
 	i = 0;
 	len = ft_strlen(str) - 1;
 	while(len > i)
@@ -31,8 +32,9 @@ char    *ft_strrev(char *str)
 int main()
 {
 	char s[] = "BONJOUR MARIKO";
-	
+
 	ft_strrev(s);
 	printf("%s\n", s);
+	//printf("%s\n", ft_strrev("BONJOUR MARIKO"));
 	return(0);
 }
