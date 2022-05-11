@@ -2,43 +2,52 @@
 
 int		ft_isblank(char c)
 {
-	return (c == ' ' || c == '\t');
+	if (c == ' ' || c == '\t')
+		return (1);
+	return (0);
 }
 
 void	rostring(char *s)
 {
 	int		i;
-	int		first_word_length; 
+	int		first_word; 
 
 	i = 0;
-	first_word_length = 0;
+	first_word = 0;
 
 	while (s[i])
 	{
-		// skip beggining whitespaces
 		while (ft_isblank(s[i]))
 			i++;
 		if (s[i] && ft_isblank(s[i]) == 0)
 		{
-			// if it's the beggining
-			if (first_word_length == 0)
-				// keep the length of first word for later
-				while (s[i] && ft_isblank(s[i++]) == 0)
-					first_word_length++;
+			if (first_word == 0)
+			{
+				while (s[i] && ft_isblank(s[i]) == 0)
+				{
+					first_word++;
+					i++;
+				}
+			}
 			else
 			{
-				// for other words, just write it to stdout (+ one whitespace)
-				while (s[i] && ft_isblank(s[i]) == 0 && write(1, &s[i++], 1));
+				while (s[i] && ft_isblank(s[i]) == 0)
+				{
+					write(1, &s[i], 1);
+					i++;
+				}
 				write(1, " ", 1);
 			}
 		}
 	}
-	// write first word
 	i = 0;
 	while (ft_isblank(s[i]))
 		i++;
-	while (first_word_length--)
+	while (first_word > 0)
+	{
 		write(1, &s[i++], 1);
+		first_word--;
+	}
 }
 
 int		main(int argc, char **argv)

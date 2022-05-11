@@ -1,7 +1,6 @@
-typedef struct s_list t_list;
-
-struct s_list
+typedef struct    s_list
 {
-	int     data;
-	t_list  *next;
-};
+    struct s_list *next;
+    void          *data;
+}                 t_list;
+
