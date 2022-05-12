@@ -34,7 +34,7 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
 
  int ascending(int a, int b)
  {
- 	return (a <= b);// bの値のほうが大きい場合０が返ってくる
+ 	return (a <= b);// bの値のほうが大きい場合1が返ってくる
  }
 
  int	main(void)

@@ -39,14 +39,14 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		j = ft_atoi(argv[1]);
-		i = i;
+		i = 1;
 		while (i <= 9)
 		{
-			ft_putchar(i + '0');
+			ft_putnbr(i);
 			ft_putchar(' ');
 			ft_putchar('x');
 			ft_putchar(' ');
-			ft_putchar(j + '0');
+			ft_putnbr(j);
 			ft_putchar(' ');
 			ft_putchar('=');
 			ft_putchar(' ');

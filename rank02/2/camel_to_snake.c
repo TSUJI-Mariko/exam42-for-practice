@@ -8,14 +8,17 @@ void	ft_putchar(char c)
 int main(int argc, char **argv)
 {
 	int i;
+	i = 0;
 	if (argc == 2)
 	{
 		while (argv[1][i])
 		{
-			if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
+			if (i == 0)
+				ft_putchar(argv[1][i]);
+			else if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
 			{
 				ft_putchar('_');
-				ft_putchar(argv[1][i]);
+				ft_putchar(argv[1][i] + 32);
 			}
 			else
 					ft_putchar(argv[1][i]);

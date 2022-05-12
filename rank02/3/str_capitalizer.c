@@ -9,7 +9,7 @@ int	to_upper(char c, char d)
 {
 	if (c == ' ' || d == '\t')
 	{
-		if (c <= 'a' && c > 'z')
+		if (c <= 'a' && c >= 'z')
 			return (1);
 	}
 	return (0);

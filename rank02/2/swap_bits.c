@@ -14,7 +14,7 @@ unsigned char swap_bits(unsigned char octet)
 #include <stdio.h>
 int	main(void)
 {
-	unsigned char test = 33;
+	unsigned char test = 192;
 	printf("Should be 12: %d\n", swap_bits(test));
 	return (0);
 }
