@@ -3,7 +3,9 @@ examen pour passer chaque "tronc"
 # Exam rank 02
 J'ai préparé sauf flood fill (level4)
 
-100/100 ;))
+100/100 ✅
+
+
  Level 01           | Level 02          | Level 03          | Level 04           
 :-----------        | :-----------:     | -----------:      | -----------:        
 first_word          | alpha_mirror      | add_prime_sum     | ft_rev_wstr        
