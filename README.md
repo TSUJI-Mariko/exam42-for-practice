@@ -17,12 +17,12 @@ rot_13	            | inter       	| hidenp            | rostring
 rotone              | is_power_of_2     | lcm               | sort_int_tab        
 search_and_replace  | last_word     	| paramsum          | sort_list           
 ulstr               |	max	      	| pgcd              | ft_itoa_base
-fizz_buzz	    | print_bits        | print_hex         | |
-	      	    | reverse_bits      | rstr_capitalizer  | |
-                    | swap_bits         | str_capitalizer   | |
-                    | union             | tab_mult          | |          
-                    | wdmatch           |                   | |
-                    | camel_to_snake    |                   | |
-                    | strcspn           |                   | |
-                    | strspn            |                   | | 
-                    | strpbrk           |                   | | 
+fizz_buzz	    | print_bits        | print_hex         | --
+--	      	    | reverse_bits      | rstr_capitalizer  | --
+--                  | swap_bits         | str_capitalizer   | --
+--                  | union             | tab_mult          | --         
+--                  | wdmatch           | --                | --
+--                  | camel_to_snake    | --                | --
+--                  | strcspn           | --                | --
+--                  | strspn            | --                | --
+--                  | strpbrk           | --                | --
