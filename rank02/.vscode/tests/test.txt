@@ -1,6 +1,0 @@
-hello
-comment 
-ca va
-test
-5test
-fini
